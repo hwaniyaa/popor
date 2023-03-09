@@ -2,6 +2,19 @@ body * {
   font-family: 'Barlow Condensed', sans-serif;
   font-family: 'Noto Sans JP', sans-serif;
 }
+.center {
+  max-width: 1280vw;
+  margin: 0 auto;
+  color: #fff;
+}
+img {
+  object-fit: cover;
+  vertical-align: top;
+}
+video {
+  object-fit: cover;
+  vertical-align: top;
+}
 
 .header-Aera {
   width: 100%;
@@ -16,6 +29,7 @@ body * {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
     .header-logo {
       transform: translateX(60px);
       img {
@@ -29,6 +43,11 @@ body * {
       ul {
         display: flex;
         gap: 50px;
+        li {
+          a {
+            padding: 1.8vw 0;
+          }
+        }
       }
     }//.header-text
     .language {
@@ -48,9 +67,89 @@ body * {
 }//.header-Aera
 
 .main-Aera {
-  video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
+  height: 100vh;
+  .bg-video {
+    video {
+      width: 100vw;
+    }
+  }//.bg-video
+
+  .music-video {
+    .music-video--bg {
+      width: 100vw;
+      height: 65vw;
+      background-image: url("../images/bg-cosmos.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .music-video--txt {
+      text-align: center;
+      padding: 200px 0 100px 0;
+      p {
+        font-size: 48px;
+        font-weight: 700;
+      }
+    }
+    .music-video--subVideo {
+      width: 900px;
+      height: 600px;
+      outline: 1px solid red;
+      background-image: url(../images/videoThumb2.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }//.music-video
+  .we-are-mave {
+    width: 100vw;
+    height: 65vw;
+    background-image: url("../images/maveBG-back2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &.we-are-mave::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 20vw;
+      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+      position: absolute;
+      top: 0; left: 0;
+    }
+    &.we-are-mave::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 25vw;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+      position: absolute;
+      bottom: 0; left: 0;
+      z-index: 10;
+    }
+    .we-are-mave--bg {
+      width: 100%;
+      height: 38vw;
+      background-image: url("../images/maveBG-front2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      bottom: 0; left: 0;
+      z-index: 9;
+      .we-are-mave--human {
+        width: 25vw;
+        height: 25vw;
+        background-image: url("../images/memberAll.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0; right: 25%;
+
+      }
+    }
+  }//.we-are-mave
+  
 }//.main-Aera
