@@ -7,8 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
   <title>MAVE:</title>
 </head>
 <body>
@@ -35,7 +37,10 @@
   </header>
   <main class="main-Aera">
     <section class="bg-video">
-      <video playsinline loop autoplay muted src="./images/video/mave_teaser.mp4"></video>
+      <video playsinline loop autoplay muted src="./images/video/mave_teaser.mp4">
+      </video>
+        <div class="bg-video--txt-left"><img src="./images/slogan01.png" alt=""></div>
+        <div class="bg-video--txt-right"><img src="./images/slogan02.png" alt=""></div>
     </section><!-- bg-video -->
     <section class="music-video">
       <article class="music-video--bg">
@@ -44,12 +49,14 @@
             <p>OFFICIAL MUSIC VIDEO</p>
           </div>
           <div class="music-video--subVideo center">
+            <img src="./images/videoThumb2.jpg" alt="">
           </div>
         </div>
       </article>
     </section><!-- music-video -->
     <section class="we-are-mave">
       <article class="we-are-mave--bg">
+        <img src="./images/maveBG-front2.png" alt="">
         <div class="we-are-mave--human"></div>
       </article>
       <div class="we-are-mave--humanLogo center">
@@ -69,27 +76,52 @@
         </ul>
       </div>
     </section><!-- we-are-mave -->
-    <section class="mave-box center">
-      <div>
-        <p>THE 1ST SINGLE ALBUM<br />
-          PANDORA'S BOX</p>
-      </div>
-      <div>
-        <p>‘MAVE: 잃어버린 감정을 되찾기 위해<br />
-          2023년에서 눈을 뜨다!’</p>
-      </div>
-      <div>
-        <p>모두가 꿈꾸던 세계, ‘이디피아(IDYPIA)’ 라는 미래에 살고 있는<br />
-          네 명의 소녀 MAVE:가 잃어버린 감정을 되찾기 위해 2023년 세상으로 넘어왔다.<br />
-          완전한 세계, 온 인류가 꿈꿔온 유토피아인 이디피아(IDYPIA) 속<br />
-          감춰진 비밀을 알게 된 이들은 한치의 망설임과 두려움도 없이 사라져버린<br />
-          인류의 감정을 되찾기 위한 모험을 시작하려 한다.</p>
+    <section class="mave-box">
+      <article class="mave-box--txt center">
+        <div>
+          <p>THE 1ST SINGLE ALBUM<br />
+            PANDORA'S BOX</p>
+        </div>
+        <div>
+          <p>‘MAVE: 잃어버린 감정을 되찾기 위해<br />
+            2023년에서 눈을 뜨다!’</p>
+        </div>
+        <div>
+          <p>모두가 꿈꾸던 세계, ‘이디피아(IDYPIA)’ 라는 미래에 살고 있는<br />
+            네 명의 소녀 MAVE:가 잃어버린 감정을 되찾기 위해 2023년 세상으로 넘어왔다.<br />
+            완전한 세계, 온 인류가 꿈꿔온 유토피아인 이디피아(IDYPIA) 속<br />
+            감춰진 비밀을 알게 된 이들은 한치의 망설임과 두려움도 없이 사라져버린<br />
+            인류의 감정을 되찾기 위한 모험을 시작하려 한다.</p>
+        </div>
+      </article>
+      <article class="mave-box--item center"></article>
+      <div class="mave-box--item-txt center">
+        <p>DISCOGRAPHY<span class="material-symbols-rounded">
+          east
+          </span></p>
       </div>
     </section><!-- mave-box -->
   </main>
   <footer class="footer-Aera">
-    <section class="footer-bg center">
-
+    <section class="footer-bg">
+      <article class="footer-allTxt center">
+        <div class="footer-logo">
+          <img src="./images/logo-white.png" alt="">
+        </div>
+        <div class="sns-icon">
+          <ul>
+            <li><a href="#"><img src="./images/icons-youtube.svg" alt=""></a></li>
+            <li><a href="#"><img src="./images/icons-insta.svg" alt=""></a></li>
+            <li><a href="#"><img src="./images/icons-facebook.svg" alt=""></a></li>
+            <li><a href="#"><img src="./images/icons-twitter.svg" alt=""></a></li>
+            <li><a href="#"><img src="./images/icons-tiktok.svg" alt=""></a></li>
+            <li><a href="#"><img src="./images/icons-discord.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="footer-text">
+          <p>© Metaverse Entertainment Inc.</p>
+        </div>
+      </article>
     </section>
   </footer>
 </body>
