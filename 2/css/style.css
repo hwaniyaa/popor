@@ -44,7 +44,7 @@ video {
 }
 .header-Aera .header-nav .header-text {
   color: #fff;
-  font-size: 14px;
+  font-size: 0.8vw;
   font-weight: 900;
 }
 .header-Aera .header-nav .header-text ul {
@@ -68,7 +68,7 @@ video {
 }
 
 .main-Aera {
-  height: 100vh;
+  height: 100%;
 }
 .main-Aera .bg-video video {
   width: 100vw;
@@ -86,12 +86,12 @@ video {
   padding: 200px 0 100px 0;
 }
 .main-Aera .music-video .music-video--txt p {
-  font-size: 48px;
+  font-size: 3vw;
   font-weight: 700;
 }
 .main-Aera .music-video .music-video--subVideo {
-  width: 900px;
-  height: 600px;
+  width: 50vw;
+  height: 35vw;
   outline: 1px solid red;
   background-image: url(../images/videoThumb2.jpg);
   background-repeat: no-repeat;
@@ -106,27 +106,7 @@ video {
   background-position: center;
   background-size: cover;
   position: relative;
-}
-.main-Aera .we-are-mave.we-are-mave::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 20vw;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.main-Aera .we-are-mave.we-are-mave::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 25vw;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+  background-color: #000;
 }
 .main-Aera .we-are-mave .we-are-mave--bg {
   width: 100%;
@@ -138,7 +118,6 @@ video {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 9;
 }
 .main-Aera .we-are-mave .we-are-mave--bg .we-are-mave--human {
   width: 25vw;
@@ -148,6 +127,64 @@ video {
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 0;
+  top: -8%;
   right: 25%;
+}
+.main-Aera .we-are-mave .we-are-mave--humanLogo {
+  position: absolute;
+  bottom: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.main-Aera .we-are-mave .we-are-mave--humanLogo ul {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  z-index: 99;
+}
+.main-Aera .we-are-mave .we-are-mave--humanLogo ul li a img {
+  width: 3vw;
+  color: #fff;
+  padding-bottom: 1vw;
+}
+.main-Aera .we-are-mave .we-are-mave--humanLogo ul li a P {
+  text-align: center;
+  font-size: 1vw;
+  font-weight: 700;
+}
+.main-Aera .mave-box {
+  width: 100%;
+  height: 80vw;
+  background-image: url("../images/bg-album.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+}
+.main-Aera .mave-box div {
+  text-align: center;
+  line-height: 1.2;
+}
+.main-Aera .mave-box div:nth-child(1) {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.footer-Aera {
+  height: 30vw;
+}
+.footer-Aera .footer-bg {
+  width: 100%;
+  height: 10vw;
+  background-image: url("../images/footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 25%;
+  z-index: -1;
 }
